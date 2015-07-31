@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/received"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:background="@color/stats"
+            android:text="Msg" />
+
+        <TextView
+            android:id="@+id/recTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:singleLine="true"
+            android:layout_below="@+id/msg"
+            android:layout_alignRight="@+id/msg"
+            android:textColor="@color/gray"
+            android:text="Operator" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sent"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sentMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:text="Sent msg" />
+
+        <TextView
+            android:id="@+id/sentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:singleLine="true"
+            android:layout_below="@+id/sentMsg"
+            android:layout_alignLeft="@+id/sentMsg"
+            android:textColor="@color/gray"
+            android:text="Operator" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

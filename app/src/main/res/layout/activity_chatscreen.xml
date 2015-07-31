@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/signout_icon"
+            android:layout_gravity="center"
+            android:background="@null" />
+
+        <TextView
+            android:text="Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:textColor="@android:color/white"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <ImageButton
+            android:id="@+id/changePersona"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/change_persona_icon"
+            android:layout_gravity="center"
+            android:background="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <app.operatorclient.xtxt.Requestmanager.CircularImageView
+                android:id="@+id/customerPic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/profilepic" />
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:drawableRight="@drawable/user_info_icon"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="customer name" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/personaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="persona name" />
+
+            <app.operatorclient.xtxt.Requestmanager.CircularImageView
+                android:id="@+id/personaPic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/profilepic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayhint" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayhint" />
+
+    <LinearLayout
+        android:id="@+id/sendLinearlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/media"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_media"
+            android:layout_gravity="center"
+            android:background="@null" />
+
+        <EditText
+            android:id="@+id/messageEdittext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="Start typing..."
+            android:textSize="16dp"
+            android:textColorHint="@color/grayhint"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/send_message"
+            android:layout_gravity="center"
+            android:background="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
